@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.gif" alt="Late-night coding animated banner" width="100%">
+  <img src="./banner.gif" alt="Late-night coding animated banner" width="80%">
 </p>
 
 # 💫 About Me:
