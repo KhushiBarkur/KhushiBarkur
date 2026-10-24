@@ -387,7 +387,7 @@
       <rect x="196" y="18" width="32" height="28" rx="5" fill="#232946"/>
       <text x="212" y="36" fill="#fff" class="font-mono" font-size="12" text-anchor="middle">&gt;_</text>
       <text x="20" y="40" class="font-title" font-size="20">DSA &amp; CORE</text>
-      <text x="20" y="66" class="font-title" font-size="20">COMPUTER SCI</text>
+      <text x="20" y="66" class="font-title" font-size="20">CS</text>
       <text x="20" y="96" class="font-sub" font-size="14.5">C++ • OOP • DBMS • OS</text>
     </g>
   </g>
