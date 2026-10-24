@@ -20,9 +20,6 @@
 <p align="center">
   <a href="https://linkedin.com/in/khushi-barkur-797198336">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
-    <div align="center">
-  <img src="https://raw.githubusercontent.com/KhushiBarkur/KhushiBarkur/main/banner.svg" alt="Khushi Barkur GitHub Profile Banner" width="100%" />
-</div>
   </a>
   <a href="mailto:khushibarkur@gmail.com">
     <img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
