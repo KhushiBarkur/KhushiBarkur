@@ -1,0 +1,206 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <radialGradient id="bgGlow" cx="50%" cy="60%" r="75%">
+      <stop offset="0%" stop-color="#1b1238" />
+      <stop offset="60%" stop-color="#0d091e" />
+      <stop offset="100%" stop-color="#06040e" />
+    </radialGradient>
+
+    <!-- Laptop Screen Ambient Cone -->
+    <linearGradient id="screenBeam" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#ff7a00" stop-opacity="0.85" />
+      <stop offset="40%" stop-color="#ff9d00" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#ff007b" stop-opacity="0" />
+    </linearGradient>
+
+    <!-- Neon Glow Filters -->
+    <filter id="glow-orange" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-pink" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <filter id="glow-cyan" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Styles & Looping Keyframe Animations -->
+    <style>
+      .float-slow { animation: floatSlow 4s ease-in-out infinite; }
+      .float-mid { animation: floatMid 3s ease-in-out infinite; }
+      .float-fast { animation: floatFast 2.5s ease-in-out infinite; }
+      .screen-pulse { animation: screenFlicker 3.5s ease-in-out infinite; }
+      .bar-anim1 { animation: barGrow1 2s ease-in-out infinite; transform-origin: bottom; }
+      .bar-anim2 { animation: barGrow2 2.2s ease-in-out infinite; transform-origin: bottom; }
+      .bar-anim3 { animation: barGrow3 1.8s ease-in-out infinite; transform-origin: bottom; }
+      .node-pulse { animation: nodePulse 2.5s ease-in-out infinite; }
+
+      @keyframes floatSlow {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+      @keyframes floatMid {
+        0%, 100% { transform: translateY(0px) rotate(0deg); }
+        50% { transform: translateY(-14px) rotate(-2deg); }
+      }
+      @keyframes floatFast {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-7px); }
+      }
+      @keyframes screenFlicker {
+        0%, 100% { opacity: 0.85; }
+        50% { opacity: 1; }
+        70% { opacity: 0.78; }
+      }
+      @keyframes barGrow1 {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.4); }
+      }
+      @keyframes barGrow2 {
+        0%, 100% { transform: scaleY(0.6); }
+        50% { transform: scaleY(1.1); }
+      }
+      @keyframes barGrow3 {
+        0%, 100% { transform: scaleY(1); }
+        50% { transform: scaleY(0.5); }
+      }
+      @keyframes nodePulse {
+        0%, 100% { opacity: 0.7; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.15); }
+      }
+    </style>
+  </defs>
+
+  <!-- Deep Moody Bedroom Canvas -->
+  <rect width="900" height="480" fill="url(#bgGlow)" />
+
+  <!-- Background Ambient Details -->
+  <!-- Cozy Desk Lamp on Left -->
+  <path d="M 90 200 L 130 200 L 140 240 L 80 240 Z" fill="#201545" opacity="0.6"/>
+  <path d="M 110 240 L 110 390 L 80 390 L 140 390" stroke="#160e33" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 85 240 L 40 380 L 180 380 Z" fill="#ff7a00" opacity="0.04" />
+
+  <!-- Cozy Wall Shadow & Shelf -->
+  <rect x="250" y="270" width="400" height="6" rx="3" fill="#1b1238" opacity="0.8"/>
+  <!-- Sleeping Cat on the shelf -->
+  <path d="M 360 270 C 360 250, 390 250, 400 270 Z" fill="#130b29"/>
+  <circle cx="366" cy="256" r="6" fill="#130b29"/>
+
+  <!-- Warm Screen Glow Pyramid onto Programmer -->
+  <polygon points="450,220 310,430 590,430" fill="url(#screenBeam)" class="screen-pulse" />
+
+  <!-- The Developer Character -->
+  <g id="developer">
+    <!-- Back/Shoulders (Deep Night Violet) -->
+    <path d="M 330 460 C 340 380, 370 330, 450 330 C 530 330, 560 380, 570 460 Z" fill="#1a113a" />
+    
+    <!-- Chest / Torso Warm Ambient Glow -->
+    <path d="M 360 460 C 375 395, 410 365, 450 365 C 490 365, 525 395, 540 460 Z" fill="#ff6b00" opacity="0.85" />
+    
+    <!-- Head / Neck -->
+    <rect x="437" y="290" width="26" height="45" rx="10" fill="#ffa43a" />
+    <!-- Chin & Cheeks in Warm Neon Screen Backlight -->
+    <ellipse cx="450" cy="275" rx="36" ry="42" fill="#ff9100" />
+    
+    <!-- Face Silhouette Shader -->
+    <path d="M 414 275 C 414 240, 486 240, 486 275 C 486 295, 465 315, 450 315 C 435 315, 414 295, 414 275 Z" fill="#ff7a00" />
+
+    <!-- Stylish Top Bun Hair (Neon Pink/Magenta Accents) -->
+    <ellipse cx="450" cy="230" rx="32" ry="32" fill="#ff2a85" filter="url(#glow-pink)" opacity="0.9" />
+    <ellipse cx="450" cy="230" rx="28" ry="28" fill="#e0186d" />
+    <ellipse cx="450" cy="180" rx="22" ry="22" fill="#ff2a85" filter="url(#glow-pink)" />
+    <circle cx="450" cy="178" r="18" fill="#ff4097" />
+
+    <!-- Forearms resting on desk / typing posture -->
+    <path d="M 320 460 C 340 435, 400 425, 440 435 L 430 455 Z" fill="#ff7a00" />
+    <path d="M 580 460 C 560 435, 500 425, 460 435 L 470 455 Z" fill="#ff7a00" />
+  </g>
+
+  <!-- Laptop Body -->
+  <g id="laptop">
+    <rect x="350" y="415" width="200" height="120" rx="6" fill="#080512" stroke="#251a4a" stroke-width="2" />
+    <!-- Glowing Laptop Logo -->
+    <circle cx="450" cy="455" r="10" fill="#ff7a00" filter="url(#glow-orange)" />
+  </g>
+
+  <!-- Desk Horizon -->
+  <rect x="0" y="465" width="900" height="20" fill="#05030a" />
+
+  <!-- ================= FLOATING NEON SKILL ICONS ================= -->
+
+  <!-- 1. Code Braces { } (Core Backend: Java / Spring / Python) -->
+  <g class="float-slow" filter="url(#glow-orange)">
+    <!-- Left Brace -->
+    <path d="M 355 170 C 335 170, 345 205, 325 215 C 345 225, 335 260, 355 260" 
+          fill="none" stroke="#ff8c00" stroke-width="7" stroke-linecap="round" />
+    <!-- Right Brace -->
+    <path d="M 545 170 C 565 170, 555 205, 575 215 C 555 225, 565 260, 545 260" 
+          fill="none" stroke="#ff8c00" stroke-width="7" stroke-linecap="round" />
+  </g>
+
+  <!-- 2. AI / Machine Learning Neural Network Nodes -->
+  <g class="float-mid" transform="translate(415, 75)" filter="url(#glow-cyan)">
+    <!-- Neural Connections -->
+    <line x1="15" y1="20" x2="55" y2="5" stroke="#00f0ff" stroke-width="2.5" opacity="0.8"/>
+    <line x1="15" y1="20" x2="55" y2="40" stroke="#00f0ff" stroke-width="2.5" opacity="0.8"/>
+    <line x1="55" y1="5" x2="55" y2="40" stroke="#00f0ff" stroke-width="2" opacity="0.5"/>
+    
+    <!-- Nodes -->
+    <circle cx="15" cy="20" r="5" fill="#ffffff" class="node-pulse"/>
+    <circle cx="55" cy="5" r="6" fill="#00f0ff" class="node-pulse"/>
+    <circle cx="55" cy="40" r="4.5" fill="#00f0ff" class="node-pulse"/>
+  </g>
+
+  <!-- 3. Data Analytics / EDA Animated Histogram -->
+  <g class="float-fast" transform="translate(390, 115)" filter="url(#glow-orange)">
+    <rect x="0" y="0" width="5" height="30" rx="2.5" fill="#ff7a00" class="bar-anim1" />
+    <rect x="9" y="-6" width="5" height="36" rx="2.5" fill="#ffa726" class="bar-anim2" />
+    <rect x="18" y="6" width="5" height="24" rx="2.5" fill="#ff7a00" class="bar-anim3" />
+    <rect x="27" y="-2" width="5" height="32" rx="2.5" fill="#ff5722" class="bar-anim1" />
+  </g>
+
+  <!-- 4. Java / Spring Hexagon Tag (Left) -->
+  <g class="float-fast" transform="translate(255, 120)" filter="url(#glow-pink)">
+    <polygon points="30,0 60,16 60,48 30,64 0,48 0,16" fill="#1b0c2e" stroke="#ff2a85" stroke-width="3" />
+    <text x="30" y="38" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16" text-anchor="middle">JAVA</text>
+  </g>
+
+  <!-- 5. Python / Fast-API Box (Right) -->
+  <g class="float-slow" transform="translate(585, 135)" filter="url(#glow-pink)">
+    <rect x="0" y="0" width="54" height="42" rx="10" fill="#200d30" stroke="#ff2a85" stroke-width="3" />
+    <text x="27" y="27" fill="#ff75b5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="16" text-anchor="middle">Py</text>
+  </g>
+
+  <!-- 6. React Atom Ring / Cloud Floating Symbol -->
+  <g class="float-mid" transform="translate(585, 230)" filter="url(#glow-cyan)">
+    <ellipse cx="25" cy="20" rx="24" ry="9" fill="none" stroke="#00f0ff" stroke-width="2.5" transform="rotate(30 25 20)" />
+    <ellipse cx="25" cy="20" rx="24" ry="9" fill="none" stroke="#00f0ff" stroke-width="2.5" transform="rotate(-30 25 20)" />
+    <circle cx="25" cy="20" r="3" fill="#ffffff" />
+  </g>
+
+  <!-- 7. Terminal Prompt & Comments //: -->
+  <g class="float-slow" transform="translate(685, 205)" filter="url(#glow-orange)">
+    <text x="0" y="20" fill="#ffa726" font-family="monospace" font-weight="bold" font-size="28">//:</text>
+  </g>
+
+  <g class="float-fast" transform="translate(230, 240)">
+    <rect x="0" y="0" width="36" height="6" rx="3" fill="#ff2a85" filter="url(#glow-pink)"/>
+    <rect x="0" y="12" width="26" height="6" rx="3" fill="#ff2a85" filter="url(#glow-pink)"/>
+    <rect x="0" y="24" width="32" height="6" rx="3" fill="#ff2a85" filter="url(#glow-pink)"/>
+  </g>
+</svg>
