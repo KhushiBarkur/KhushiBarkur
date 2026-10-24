@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="./banner.gif" alt="Late-night coding animated banner" width="100%">
+</p>
+
 # 💫 About Me:
 👩‍💻 **I’m currently working on**  <br>Building AI-powered data analytics tools, machine learning applications, and Java Spring Boot backends.<br><br>🤝 **I’m looking to collaborate on**  <br>AI/ML projects, data analytics solutions, and full-stack applications using Python, Java, React, and FastAPI.<br><br>🛠️ **I’m looking for help with**  <br>Improving ML model performance, designing scalable backend systems, and deploying AI applications for real-world use cases.<br><br>🌱 **I’m currently learning**  <br>Cloud architecture, production-ready AI applications, and data-driven product development.<br><br>💬 **Ask me about**  <br>Java, Spring Boot, Python, SQL, Exploratory Data Analysis (EDA), machine learning, and building AI-powered applications.<br><br>⚡ **Fun fact**  <br>I helped lead NSS outreach and blood donation campaigns at IET DAVV that collected **245 units of blood over two years**.
 
