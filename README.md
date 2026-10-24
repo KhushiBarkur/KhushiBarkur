@@ -7,7 +7,9 @@
     width="100%"
   />
 </p>
-
+<p align="center">
+  <img src="./banner.svg" alt="Cozy animated coding banner" width="100%" />
+</p>
 <p align="center">
   <a href="https://git.io/typing-svg">
     <img
